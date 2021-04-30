@@ -1,0 +1,433 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+html, body{
+    height: 100%;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+nav.mobile{
+    display: none;
+}
+header{
+    width: 100%;
+    background-color: #02896f;
+    border-bottom: 2px solid rgba(0, 0, 0, .4);    
+}
+.center{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+header > .center{    
+    padding: 10px 2%;
+    display: flex;
+    flex-direction: row;
+}
+.logo{
+    width: 10%;
+}
+.logo a{
+    color: white;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+nav{
+    width: 90%;
+}
+nav ul{
+    text-align: right;  
+    margin: 3px 0;  
+}
+nav ul li{
+    display: inline; 
+    padding: 0 15px;   
+}
+nav ul li a{
+    color: white;
+    font-size: 17px;
+}
+nav ul li:hover{
+    background-color: #027e66;
+    padding: 18px;
+}
+.redes-sociais{
+    width: 15%;
+    text-align: right;
+}
+.redes-sociais a{
+    color: white;
+    font-size: 17px;
+    padding: 0 5px;    
+}
+.redes-sociais span{
+    color: white;    
+}
+section.banner{
+    width: 100%;
+    background-image: url(../img/riodejaneiro.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 700px;
+}
+.layer{
+    width: 100%;
+    background-color: rgba(0, 0, 0, .6);
+    min-height: 700px;
+}
+.layer > .center{
+    display: flex;
+    flex-direction: row;
+}
+.home{
+    width: 70%;
+    position: relative;
+    top: 130px;
+}
+.home h1{
+    color: white;
+    font-size: 50px; 
+    line-height: 50px;   
+}
+.home p{
+    width: 80%;
+    color: white;
+    font-size: 25px;
+    padding: 15px 0;
+    line-height: 40px;
+}
+.home span{
+    color: #02896f;
+    font-weight: bold;
+}
+.formulario{
+    width: 30%;        
+    position: relative;
+    z-index: 99;
+    top: 130px;
+}
+.formulario form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;        
+}
+.formulario form input,select {        
+    height: 40px;
+    padding-left: 10px;    
+    border-radius: 5px;
+    border: 0;
+    outline: 0;
+    margin-bottom: 15px;
+    background-color: rgba(280,280,280, .8);
+}
+.formulario form input::placeholder{    
+    color: #02896f;
+}
+.formulario form select{    
+    color: #02896f;
+}
+.formulario form button[type=submit] {
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    height: 34px;
+    background-color: #02896f;
+    text-align: center;
+    border-radius: 10px;
+    line-height: 34px;
+    border: 0;
+    font-size: 17px;
+    cursor: pointer;
+    margin: auto;
+}
+.formulario form button:hover{
+    background-color: #027e66;    
+}
+section.servicos{
+    background-color: rgba(200,200,200, .3);
+}
+section.servicos-title{
+    width: 100%;
+    background-color: #455a64;
+    padding: 20px 0;
+}
+.servicos-title h1{
+    color: white;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+.servicos > .center{
+	display: flex;
+	flex-wrap: wrap;
+    padding: 20px 0;
+}
+.box-planos-single{
+	width: 33.3%;
+	padding: 0 40px;
+}
+.box-planos-wraper{
+	width: 100%;
+	border: 1px solid #ccc;	
+	-webkit-box-shadow: 10px 9px 5px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 9px 5px -8px rgba(0,0,0,0.75);
+    box-shadow: 10px 9px 5px -8px rgba(0,0,0,0.75);
+    margin: 10px 0;
+}
+.img-trilha{
+    width: 100%;    
+}
+.img-trilha img{
+    width: 100%; 
+    height: 150px;   
+}
+.box-planos-single h2{
+	background-color: #02896f;
+	text-align: center;
+	color: white;
+	padding: 10px;
+	font-weight: lighter;
+}
+.box-planos-single p{
+	color: #777777;
+	font-size: 17px;
+	margin-top: 15px;
+	margin-left: 20px;
+}
+.pontos-planos{
+	padding: 8px 0 15px 0;
+}
+.preco{
+	margin-top: 10px;
+	padding: 15px 0;
+	text-align: center;
+}
+.preco h2{
+	font-size: 18px;
+	color: #777;
+	background-color: transparent;
+	display: inline-block;
+	border-top: 1px solid #ccc;	
+	padding: 0 25px;
+}
+.preco h2 a{
+	color: white;
+    text-decoration: none;
+    width: 180px;
+    height: 40px;
+    background-color: #02896f;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 20px;
+    line-height: 40px;
+    display: block;
+}
+.pre-footer{
+    width: 100%;
+    background-color: #2f3d42;
+    padding: 20px 0;    
+}
+.pre-footer > .center{
+    display: flex;
+    flex-direction: row;
+}
+.endereco{
+    width: 85%;
+}
+.endereco p{
+    color: white;
+}
+.rodape{
+    width: 100%;
+    background-color:#02896f;
+    padding: 20px 0;  
+    text-align: center;  
+}
+.rodape p{
+    color: white;
+}
+section.fale-conosco{
+    background-color: rgba(200,200,200, .3);
+}
+section.fale-conosco > .center{
+    display: flex;
+    flex-direction: row;
+    padding: 30px 0;
+}
+.sobre-nos{
+    width: 50%;
+}
+.sobre-nos h1{
+    color: black;
+    font-size: 40px; 
+    line-height: 50px;   
+}
+.sobre-nos p{
+    width: 80%;
+    color: black;
+    font-size: 22px;
+    padding: 15px 0;
+    line-height: 40px;
+}
+.contato{
+    width: 50%;     
+}
+.contato form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;        
+}
+.contato form input,select {    
+    height: 40px;
+    padding-left: 10px;    
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: 0;
+    margin-bottom: 15px;
+    background-color: rgba(280,280,280, .8);
+}
+.contato form input::placeholder{    
+    color: #02896f;
+}
+.contato form select{    
+    color: #02896f;
+}
+.contato textarea {
+    width: 100%;
+    height: 120px;
+    border: 1px solid #ccc;
+    padding: 8px;
+    border-radius: 5px;
+    margin: 5px 0;
+    resize: none;
+    outline: 0;
+}
+.contato textarea::placeholder{    
+    color: #02896f;
+}
+.contato form button[type=submit] {
+    color: white;
+    text-decoration: none;
+    width: 30%;
+    height: 34px;
+    background-color: #02896f;
+    text-align: center;
+    border-radius: 10px;
+    line-height: 34px;
+    border: 0;
+    font-size: 17px;
+    cursor: pointer;
+    margin: 10px auto;
+}
+.contato form button:hover{
+    background-color: #027e66;    
+}
+@media screen and (max-width: 768px){
+    nav{
+        width: 90%;
+        text-align: right;
+    }    
+    header nav.mobile{
+		display: block;		
+	}
+	nav.mobile > i{
+		font-size: 25px;
+		color: white;
+		position: relative;
+		top: 0;
+		cursor: pointer;
+	}
+	header nav.mobile ul{
+		display: none;
+		position: absolute;
+		left: 0;		
+		top: 48px;
+		background-color: rgba(255,255,255, .4);		
+		width: 100%;
+		text-align: center;		
+	}
+	nav.mobile li{
+		border-bottom: 1px solid #ccc;
+		padding: 10px 0;
+        width: 100%;
+        display: block;
+	}
+    nav.mobile ul li:hover{
+        background-color: #027e66;
+        padding: 10px;
+    }
+	nav.mobile li a{
+		text-decoration: none;
+		color: black;
+	}
+	nav.desktop{
+		display: none;
+	}
+    header .redes-sociais{
+        display: none;
+    }
+    section.banner{
+        min-height: 400px;
+    }
+    .layer > .center{        
+        flex-direction: column;
+    }
+    .home{
+        width: 90%;       
+        text-align: center;
+        margin: 0 auto;
+    }
+    .home p{
+        width: 100%;
+    }
+    .formulario{
+        width: 100%;                  
+        display: inline-block;        
+    }
+    .formulario form{
+        width: 85%;
+        margin: 0 auto;
+    }
+    .box-planos-single{
+        width: 100%;        
+    }
+    .pre-footer > .center{        
+        flex-direction: column;
+    }
+    .endereco{
+        width: 100%;
+        text-align: center;
+    }
+    .redes-sociais{
+        width: 100%;
+        text-align: center;
+        margin: 20px 0 5px 0;
+    }
+    section.fale-conosco > .center{        
+        flex-direction: column;        
+    }
+    .sobre-nos{
+        width: 100%;
+        text-align: center;
+    }
+    .sobre-nos p{
+        margin: 0 auto;
+    }
+    .contato{
+        width: 100%;
+    }
+    .contato form{
+        width: 90%;
+        margin: 0 auto;
+    }
+}
