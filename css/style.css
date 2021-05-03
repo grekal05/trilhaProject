@@ -51,7 +51,11 @@ nav.mobile{
 header{
     width: 100%;
     background-color: #02896f;
-    border-bottom: 2px solid rgba(0, 0, 0, .4);    
+    border-bottom: 2px solid rgba(0, 0, 0, .4);  
+    position: fixed;
+    top: 0;
+    left: 0;  
+    z-index: 9999;
 }
 .center{
     max-width: 1200px;
@@ -384,7 +388,7 @@ section.fale-conosco > .center{
 		position: absolute;
 		left: 0;		
 		top: 48px;
-		background-color: rgba(255,255,255, .4);		
+		background-color: rgb(255,255,255);		
 		width: 100%;
 		text-align: center;		
 	}
