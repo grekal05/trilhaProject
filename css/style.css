@@ -13,6 +13,38 @@ a{
 ul{
     list-style: none;
 }
+.sucesso{
+	display: none;	
+	padding: 15px 2%;	
+	color: #56b700;
+	background-color: #dff2bf;
+	font-weight: bold;
+	font-size: 15px;	
+}
+.erro{
+	display: none;	
+	padding: 15px 2%;	
+	color: #921e1e;
+	background-color: #f1c3c3;
+	font-weight: bold;
+	font-size: 15px;	
+}
+.overlay-loading{
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 99999;
+	background-color: rgba(0,0,0,0.4);
+}
+.overlay-loading img{
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+}
 nav.mobile{
     display: none;
 }
@@ -279,15 +311,15 @@ section.fale-conosco > .center{
     padding: 15px 0;
     line-height: 40px;
 }
-.contato{
+.form{
     width: 50%;     
 }
-.contato form{
+.form form{
     width: 100%;
     display: flex;
     flex-direction: column;        
 }
-.contato form input,select {    
+.form form input,select {    
     height: 40px;
     padding-left: 10px;    
     border-radius: 5px;
@@ -296,13 +328,13 @@ section.fale-conosco > .center{
     margin-bottom: 15px;
     background-color: rgba(280,280,280, .8);
 }
-.contato form input::placeholder{    
+.form form input::placeholder{    
     color: #02896f;
 }
-.contato form select{    
+.form form select{    
     color: #02896f;
 }
-.contato textarea {
+.form textarea {
     width: 100%;
     height: 120px;
     border: 1px solid #ccc;
@@ -312,10 +344,10 @@ section.fale-conosco > .center{
     resize: none;
     outline: 0;
 }
-.contato textarea::placeholder{    
+.form textarea::placeholder{    
     color: #02896f;
 }
-.contato form button[type=submit] {
+.form form input[type=submit] {
     color: white;
     text-decoration: none;
     width: 30%;
@@ -329,7 +361,7 @@ section.fale-conosco > .center{
     cursor: pointer;
     margin: 10px auto;
 }
-.contato form button:hover{
+.form form button:hover{
     background-color: #027e66;    
 }
 @media screen and (max-width: 768px){
@@ -423,10 +455,10 @@ section.fale-conosco > .center{
     .sobre-nos p{
         margin: 0 auto;
     }
-    .contato{
+    .form{
         width: 100%;
     }
-    .contato form{
+    .form form{
         width: 90%;
         margin: 0 auto;
     }

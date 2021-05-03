@@ -14,17 +14,17 @@
             <div class="logo"><a href="#">Trilhas</a></div>
             <nav class="desktop">
                 <ul>
-                    <li><a href="http://">Home</a></li>
-                    <li><a href="http://">Passeio</a></li>
-                    <li><a href="http://">Contato</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#passeio">Passeio</a></li>
+                    <li><a href="#contato">Contato</a></li>
                 </ul>
             </nav>
             <nav class="mobile">
                 <i class="fa fa-bars"></i>
                 <ul>
-                    <li><a href="http://">Home</a></li>
-                    <li><a href="http://">Passeio</a></li>
-                    <li><a href="http://">Contato</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#passeio">Passeio</a></li>
+                    <li><a href="#contato">Contato</a></li>
                 </ul>
             </nav>
             <!--<div class="redes-sociais">
@@ -33,13 +33,13 @@
                 <a href="tel:+5521980146399"><i class="fa fa-phone"></i></a>
             </div>-->
         </div>
-    </header>
-    <section class="banner">
+    </header>    
+    <section id="home" class="banner">
         <div class="layer">
             <div class="center">
                 <div class="home">
                     <h1>Já trilhou hoje?</h1>
-                    <p>Aos trilheiros de plantão, conheçam a cidade maravilhosa em um outro ângulo!!! 
+                    <p>Aos trilheiros de plantão, conheçam a cidade maravilhosa de um outro ângulo!!! 
                         Veja alguns de nossos principais roteiros. <span>#vamoqvamo</span></p>
                 </div>
                 <div class="formulario">
@@ -63,8 +63,8 @@
                 </div>                
             </div>
         </div>        
-    </section>
-    <section class="servicos">
+    </section>   
+    <section id="passeio" class="servicos">
         <section class="servicos-title">
             <div class="center">
                 <h1>Passeios</h1>
@@ -125,8 +125,8 @@
 				</div>
 			</div>            
         </div>
-    </section>
-    <section class="fale-conosco">
+    </section>       
+    <section id="contato" class="fale-conosco">
         <section class="servicos-title">
             <div class="center">
                 <h1>Contato</h1>
@@ -141,21 +141,19 @@
                     outros acessórios para um passeio seguro e confortável.
                 </p>
             </div>
-            <div class="contato">
-                <form action="" method="post">
-                    <input type="text" name="nome" placeholder="Coloque o seu nome...">
-                    <input type="email" name="email" placeholder="Coloque o seu email...">
-                    <select name="sexo" id="sexo">
-                        <option value="0">Sexo</option>
-                        <option value="1">Masculino</option>
-                        <option value="2">Feminino</option>
-                    </select>
+            <div class="form">                
+                <form action="" method="POST" id="contactForm">
+                    <input type="text" name="nome" id="nome" placeholder="Coloque o seu nome...">
+                    <input type="text" name="email" id="email" placeholder="Coloque o seu email...">
+                    <input type="text" name="assunto" id="assunto" placeholder="Assunto...">
                     <textarea name="mensagem" id="mensagem" placeholder="Coloque a sua mensagem..."></textarea>
-                    <button type="submit">Enviar!</button>
+                    <input type="submit" value="Enviar!">
+                    <div id="sucesso" class="sucesso">Formulário enviado com sucesso.</div>
+                    <div id="erro" class="erro">Sinto muito, a sua mensagem não foi enviada. Tente em outro instante!</div>
                 </form>
             </div>
         </div>
-    </section>
+    </section>    
     <footer>
         <section class="pre-footer">
             <div class="center">
@@ -177,7 +175,11 @@
         </section>        
     </footer>
     <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/animate.js"></script>
+    <script src="js/menu_scroll.js"></script>
     <script src="js/menu_mobile.js"></script>
-    <script src="js/whatsapp.js"></script>
+    <script src="js/formulario.js"></script>
+    
+    <!--<script src="js/whatsapp.js"></script>-->
 </body>
 </html>
