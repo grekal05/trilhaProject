@@ -4,8 +4,8 @@ $('input[type=text]').focus(function(){
 $('textarea[name=mensagem]').focus(function(){
     resetarCampoInvalido($(this));
 })
-let form = document.querySelector("#contactForm");
-form.addEventListener("submit", function(event){
+let formContato = document.querySelector("#contactForm");
+formContato.addEventListener("submit", function(event){
     event.preventDefault();        
     let nome = $('input[name=nome]').val();    
     let email = $('input[name=email]').val(); 

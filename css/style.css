@@ -185,7 +185,7 @@ section.banner{
     cursor: pointer;
     margin: auto;
 }
-.formulario form button:hover{
+.formulario form input[type=submit]:hover{
     background-color: #027e66;    
 }
 section.servicos{
