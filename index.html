@@ -43,22 +43,14 @@
                         Veja alguns de nossos principais roteiros. <span>#vamoqvamo</span></p>
                 </div>
                 <div class="formulario">
-                    <form action="" method="post">
-                        <input type="text" name="nome" placeholder="Coloque o seu nome...">
-                        <input type="email" name="email" placeholder="Coloque o seu email...">
-                        <select name="sexo" id="sexo">
-                            <option value="0">Sexo</option>
-                            <option value="1">Masculino</option>
-                            <option value="2">Feminino</option>
-                        </select>
-                        <select name="trilha" id="trilha">
-                            <option value="0">Escolha o seu passeio</option>
-                            <option value="1">Pedra Bonita</option>
-                            <option value="2">Costão de Itaquatiara</option>
-                            <option value="3">Pedra do Telégrafo</option>
-                        </select>
-                        <input type="tel" name="telefone" id="telefone" placeholder="Coloque o seu número...">
-                        <button type="submit">Cadastrar!</button>
+                    <form action="" method="post" id="cadastrar">
+                        <div id="sucesso" class="sucesso">Formulário enviado com sucesso.</div>
+                        <div id="erro" class="erro">Sinto muito, a sua mensagem não foi enviada. Tente em outro instante!</div>
+                        <input type="text" name="nome" id="nome" placeholder="Coloque o seu nome...">
+                        <input type="text" name="email" id="email" placeholder="Coloque o seu email...">
+                        <input type="text" name="trilha" id="email" placeholder="Coloque o nome da trilha...">                        
+                        <input type="text" name="telefone" id="telefone" placeholder="Coloque o seu número...">
+                        <input type="submit" value="Cadastrar!">                        
                     </form>
                 </div>                
             </div>
@@ -178,8 +170,8 @@
     <script src="js/animate.js"></script>
     <script src="js/menu_scroll.js"></script>
     <script src="js/menu_mobile.js"></script>
-    <script src="js/formulario.js"></script>
-    
-    <!--<script src="js/whatsapp.js"></script>-->
+    <script src="js/cadastrar.js"></script>
+    <script src="js/contato.js"></script>    
+    <script src="js/whatsapp.js"></script>
 </body>
 </html>

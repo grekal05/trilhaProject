@@ -6,7 +6,7 @@ $('textarea[name=mensagem]').focus(function(){
 })
 let form = document.querySelector("#contactForm");
 form.addEventListener("submit", function(event){
-    event.preventDefault();    
+    event.preventDefault();        
     let nome = $('input[name=nome]').val();    
     let email = $('input[name=email]').val(); 
     let assunto = $('input[name=assunto]').val(); 
@@ -20,19 +20,7 @@ form.addEventListener("submit", function(event){
         aplicarCampoInvalido($('input[name=assunto]'));
     }else if(verificarMensagem(mensagem) == false){
         aplicarCampoInvalido($('textarea[name=mensagem]'));
-    }else{
-        $.ajax({			
-			url: 'sendemail.php',
-			method:'POST',			
-			dataType:'html',			
-            data: ({nome: $("input[name='nome']").val(), email: $("input[name='email']").val(), assunto: $("input[name='assunto']").val(), mensagem: $("textarea[name='mensagem']").val()}),
-            success: function() {
-                $('.sucesso').fadeIn();
-            }, error: function(xhr, status, error) {
-                $('.erro').fadeIn();               
-                console.log(xhr.responseText);
-            }
-		});
+    }else{        
         return false;
     }   
 })
@@ -51,7 +39,7 @@ function verificarNome(nome){
     if (nome == '') {
         return false;
     }
-    let amount = nome.split(' ').length;
+    /*let amount = nome.split(' ').length;
     let spliStr = nome.split(' ');
     if (amount >= 2) {
         for (let i = 0; i < amount; i++) {
@@ -63,15 +51,15 @@ function verificarNome(nome){
         }
     } else {
         return false;
-    }
+    }*/
 }
 function verificarEmail(email){
     if (email == '') {
         return false;
     }
-    if (email.match(/^([a-z0-9-_.]{1,})+@+([a-z.]{1,})$/) == null){
+    /*if (email.match(/^([a-z0-9-_.]{1,})+@+([a-z.]{1,})$/) == null){
         return false;                
-    }
+    }*/
 }
 function verificarAssunto(assunto){
     if (assunto == '') {

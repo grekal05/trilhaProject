@@ -171,7 +171,7 @@ section.banner{
 .formulario form select{    
     color: #02896f;
 }
-.formulario form button[type=submit] {
+.formulario form input[type=submit] {
     color: white;
     text-decoration: none;
     width: 100%;
@@ -323,19 +323,15 @@ section.fale-conosco > .center{
     display: flex;
     flex-direction: column;        
 }
-.form form input,select {    
+.form form input {    
     height: 40px;
     padding-left: 10px;    
     border-radius: 5px;
     border: 1px solid #ccc;
     outline: 0;
-    margin-bottom: 15px;
-    background-color: rgba(280,280,280, .8);
+    margin-bottom: 15px;    
 }
 .form form input::placeholder{    
-    color: #02896f;
-}
-.form form select{    
     color: #02896f;
 }
 .form textarea {
