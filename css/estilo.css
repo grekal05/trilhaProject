@@ -92,10 +92,11 @@ header{
 .logout a{
 	color: white;
 	text-decoration: none;
-	font-size: 20px;
-	padding: 0 20px;
+	font-size: 20px;	
 	position: relative;
 	top: 0;
+	background-color: #60727a;
+	padding: 10px 10px;
 }
 .menu-btn{
 	float: left;
@@ -231,13 +232,9 @@ table tr{
 table tr{
 	color: #555;
 }
-
 table td{
 	padding: 8px;
 }
-
-
-
 table a.btn{
 	font-weight: normal;
 	font-size: 13px;
@@ -245,53 +242,26 @@ table a.btn{
 	text-decoration: none;
 	padding: 4px 6px;
 }
-
 a.btn.edit{background: #F4B03E;}
 a.btn.delete{background: #E05C4E;}
 a.btn.order{background: #0091ea;}
 
-
-/*Paginacao*/
-
-.paginacao{
-	margin:20px 0;
-	text-align: center;
-}
-
-.paginacao a{
-	font-size: 14px;
-	margin:0 8px;
-	display: inline-block;
-	padding: 3px 4px;
-	border: 1px solid #ccc;
-	text-decoration: none;
-	color: #666;
-}
-
-.paginacao a.page-selected{
-	background: rgb(220,220,220);
-}
-
 /*Tabela Responsiva*/
-
 .table-responsive{
 	margin:20px auto;
 	font-weight: 300;
 }
-
 .table-responsive .row:nth-of-type(1){
 	font-weight: normal;
 	background: #454a5a;
 	padding: 10px;
 	color: white;
 }
-
 .table-responsive .row{
 	color: #777;
 	padding: 8px;
 	border-bottom: 1px solid #ccc;
 }
-
 .col{
 	float: left;
 	width: 50%;
@@ -305,7 +275,6 @@ a.btn.order{background: #0091ea;}
 .box-content form{
 	margin:30px 0;
 }
-
 .box-content form label{
 	font-size: 17px;
 	font-weight: 300;
