@@ -44,7 +44,7 @@
                         <input type="text" name="nome" id="nome" placeholder="Coloque o seu nome...">
                         <input type="text" name="email" id="email" placeholder="Coloque o seu email...">                                              
                         <input type="text" name="telefone" id="telefone" placeholder="Coloque o seu número...">
-                        <select name="passeio" id="passeio">
+                        <select onchange="habilitaBtn()" name="passeio" id="passeio">
                             <option value="0">Escolha o seu passeio...</option>
                             <option value="1">Pedra Bonita</option>
                             <option value="2">Costão de Itaquatiara</option>
@@ -53,7 +53,7 @@
                             <option value="5">Praia do Perigoso</option>
                             <option value="6">Morro da Urca</option>
                         </select>
-                        <input type="submit" value="Cadastrar!">                        
+                        <input id="cadastrar" type="submit" value="Cadastrar!">                        
                     </form>
                 </div>                
             </div>
@@ -228,6 +228,6 @@
     <script src="js/menu_mobile.js"></script>
     <script src="js/cadastrar.js"></script>
     <script src="js/contato.js"></script>    
-    <script src="js/whatsapp.js"></script>
+    <!--<script src="js/whatsapp.js"></script>-->
 </body>
 </html>

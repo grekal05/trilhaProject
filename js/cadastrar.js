@@ -1,6 +1,9 @@
 $('input[type=text]').focus(function(){
     resetarCampoInvalido($(this));
 })
+$('select[name=passeio]').focus(function(){
+    resetarCampoInvalido($(this));
+})
 let form = document.querySelector("#cadastrar");
 form.addEventListener("submit", function(event){
     event.preventDefault();        
@@ -17,10 +20,20 @@ form.addEventListener("submit", function(event){
         aplicarCampoInvalido($('input[name=trilha]'));
     }else if(verificarTelefone(telefone) == false){
         aplicarCampoInvalido($('input[name=telefone]'));
+    }else if(habilitaBtn() == false){
+        aplicarCampoInvalido($('select[name=passeio]'));
     }else{        
         return false;
     }   
 })
+function habilitaBtn(){
+    var passeios = document.getElementById("passeio").value;
+    if(passeios != "0"){
+        return true;                     
+    } else{
+        return false;        
+    }
+}
 function aplicarCampoInvalido(el){
     el.css('color','red');
     el.css('border','1px solid red');
