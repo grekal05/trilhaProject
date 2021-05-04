@@ -1,0 +1,540 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+html,body{
+	height: 100%;
+	background-color: rgb(225,225,225);
+}
+body{
+	overflow-x: hidden;
+}
+.box-login{
+	max-width: 600px;
+	width: 95%;
+	padding: 80px 2%;
+	background-color: white;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	box-shadow: 10px 10px 5px rgb(200,200,200);
+}
+.box-login h2{
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 20px;
+	color: black;
+	margin: 10px 0;
+	font-weight: normal;
+}
+.box-login input[type=text],
+.box-login input[type=password]{
+	width: 100%;
+	height: 40px;
+	border: 1px solid #ccc;
+	padding-left: 8px;
+	margin-top: 8px;
+}
+.box-login input[type=submit]{
+	width: 100px;
+	height: 30px;
+	cursor: pointer;
+	margin-top: 8px;
+	font-size: 14px;
+	color: white;
+	border: 0;
+	background-color: #00bfa5;
+}
+.erro-box{
+	width: 100%;
+	padding: 8px 2%;
+	text-align: center;
+	background-color: #F75353;
+	color: white;
+	font-size: 15px;
+}
+.menu{
+	width: 250px;
+	float: left;	
+	background-color: #455a64;
+	height: 100%;
+	overflow-y: auto;
+	overflow-x: hidden;
+	padding: 10px 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+.menu-wrapper{
+	width: 250px;
+}
+header{
+	padding: 10px 0;
+	background-color: #78909c;
+	width: calc(100% - 250px);	
+	left: 250px;
+	position: relative;
+}
+.clear{
+	clear: both;
+}
+.center{	
+	margin: 0 auto;
+	padding: 0 2%;
+}
+.logout{
+	float: right;	
+}
+.logout a{
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+	padding: 0 20px;
+	position: relative;
+	top: 0;
+}
+.menu-btn{
+	float: left;
+	cursor: pointer;
+	font-size: 20px;
+	color: white;
+}
+
+div.box-usuario{
+	text-align: center;
+}
+.avatar-usuario{
+	width: 130px;
+	height: 130px;
+	border-radius: 50%;
+	display: inline-block;
+	border: 3px solid #2f3d42;
+	text-align: left;
+}
+.avatar-usuario i{
+	font-size: 50px;
+	color: #2f3d42;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.img-usuario{
+	width: 130px;
+	height: 130px;	
+	display: inline-block;
+	border: 3px solid #2f3d42;
+	border-radius: 50%;
+	position: relative;
+}
+.img-usuario img{
+	width: 100%;
+	border-radius: 50%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+}
+.nome-usuario{
+	text-align: center;
+	margin-top: 10px;
+}
+.nome-usuario p{
+	color: white;
+	font-size: 17px;
+	font-weight: normal;	
+}
+.w100{
+	width: 100%;
+}
+.w50{
+	width: 50%;
+}
+.w33{
+	width: 33.3%;
+}
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+.content{
+	position: relative;
+	left: 250px;
+	width: calc(100% - 250px);
+	padding: 2%;	
+}
+.box-content{	
+	background-color: white;
+	padding: 30px;
+	margin-bottom: 25px;
+}
+.box-content h2{
+	font-weight: 300;
+	font-size: 23px;
+}
+.itens-menu{
+	margin-top: 30px;
+}
+.itens-menu h2{
+	text-align: left;
+	font-weight: normal;
+	font-size: 17px;
+	background-color: #2f3d42;
+	color: white;
+	padding: 8px;
+}
+.itens-menu a{
+	text-decoration: none;
+	color: white;
+	padding: 8px;
+	display: block;
+	border-bottom: 2px solid #2f3d42;
+	font-size: 16px;
+}
+.card-title{
+	width: 100%;
+	padding: 6px;
+	color: white;
+	font-size: 17px;
+	font-weight: lighter;
+	background-color: #0095ea;
+}
+/*Tabelas*/
+
+.wraper-table{
+	overflow-x: auto;
+}
+
+table{
+	font-weight: 300;
+	min-width: 900px;
+	margin:20px 0;
+	width: 100%;
+	border-collapse: collapse;
+}
+
+table tr:nth-of-type(1){
+	background: #02896f;
+	color: white;
+}
+
+table tr{
+	border-bottom: 1px solid #ccc;
+}
+
+table tr{
+	color: #555;
+}
+
+table td{
+	padding: 8px;
+}
+
+
+
+table a.btn{
+	font-weight: normal;
+	font-size: 13px;
+	color: white;
+	text-decoration: none;
+	padding: 4px 6px;
+}
+
+a.btn.edit{background: #F4B03E;}
+a.btn.delete{background: #E05C4E;}
+a.btn.order{background: #0091ea;}
+
+
+/*Paginacao*/
+
+.paginacao{
+	margin:20px 0;
+	text-align: center;
+}
+
+.paginacao a{
+	font-size: 14px;
+	margin:0 8px;
+	display: inline-block;
+	padding: 3px 4px;
+	border: 1px solid #ccc;
+	text-decoration: none;
+	color: #666;
+}
+
+.paginacao a.page-selected{
+	background: rgb(220,220,220);
+}
+
+/*Tabela Responsiva*/
+
+.table-responsive{
+	margin:20px auto;
+	font-weight: 300;
+}
+
+.table-responsive .row:nth-of-type(1){
+	font-weight: normal;
+	background: #454a5a;
+	padding: 10px;
+	color: white;
+}
+
+.table-responsive .row{
+	color: #777;
+	padding: 8px;
+	border-bottom: 1px solid #ccc;
+}
+
+.col{
+	float: left;
+	width: 50%;
+}
+/*Formulários de contato do box-content*/
+.box-content > h2 > i > a{
+	text-decoration: none;
+	color: black;
+	font-size: 23px;
+}
+.box-content form{
+	margin:30px 0;
+}
+
+.box-content form label{
+	font-size: 17px;
+	font-weight: 300;
+	color: black;
+	display: block;
+}
+
+.box-content .form-group{
+	margin:15px 0;
+}
+
+.box-content form input[type=text],
+.box-content form input[type=password],
+.box-content form input[type=number]
+{
+	margin-top:8px;
+	font-size: 16px;
+	font-weight: normal;
+	color: black;
+	width: 100%;
+	height: 40px;
+	border: 1px solid #ccc;
+	padding-left: 8px;
+}
+
+.box-content form textarea{
+	margin-top:8px;
+	font-size: 16px;
+	font-weight: normal;
+	color: black;
+	width: 100%;
+	height: 150px;
+	border: 1px solid #ccc;
+	padding: 8px;
+	resize: vertical;
+}
+
+.box-content form select{
+	margin-top:8px;
+	font-size: 16px;
+	font-weight: normal;
+	color: black;
+	width: 100%;
+	height: 40px;
+	border: 1px solid #ccc;
+	padding-left: 8px;
+}
+
+.box-content form input[type=file]{
+	margin-top:8px;
+	width: 100%;
+	padding: 8px;
+	border: 1px solid #ccc;
+}
+
+.box-content form input[type=submit]{
+	width: auto;
+	height: 40px;
+	cursor: pointer;
+	margin-top: 10px;
+	font-size: 16px;
+	background: #00bfa5;
+	color: white;
+	border: 0;
+	padding: 3px 8px;
+}
+
+/*Box de alerta!*/
+
+.box-alert{
+	width: 100%;
+	padding:8px 0;
+	text-align: center;
+	margin-bottom: 8px;
+}
+.box-alert a{
+	color: white;
+	font-weight: bold;
+}
+.sucesso{
+	background: #a5d6a7;
+	color: white;
+}
+
+.erro{
+	background: #F75353;
+	color: white;
+}
+
+.atencao{
+	background: #f4a742;
+	color: white;
+}
+/*Menu selecionado*/
+.menu-active{
+	background: #3a4b51;
+}
+
+.menu-active::before{
+	/*
+		Adicionar Seta para qd estiver selecionado.
+	*/
+}
+
+.form-group-login label{
+	font-size: 13px;
+	padding-right: 6px;
+	font-weight: 300;
+	color: black;
+}
+
+form .form-group-login:nth-of-type(2){
+	position: relative;
+	top: 10px;
+}
+.boxes{
+	display: flex;
+	flex-wrap: wrap;
+}
+.box-single-wraper{
+	width: 33.3%;	
+	padding: 20px;
+}
+.box-imgs{
+	text-align: center;
+}
+.box-imgs h1{
+	font-size: 70px;
+	color: #ccc;
+	margin: 10px 0;
+}
+.box-imgs img{
+	width: 100%;
+}
+.box-imgs img.img-square{
+	width: 200px;
+	height: 200px;
+	display: block;
+	margin: 8px auto;
+}
+.box-single{
+	width: 100%;
+	border: 1px solid #ccc;
+	height: 100%;
+}
+
+.topo-box{
+	text-align: center;
+	color: #ccc;
+	padding: 10px 0;
+	border-bottom: 1px solid #ccc;
+}
+
+.topo-box img{
+	display: block;
+	max-width: 50px;
+	margin: 0 auto;
+}
+.topo-box h2{
+	font-size: 36px;
+}
+.body-box{
+	padding: 10px;
+}
+.body-box p{
+	color: #646464;
+	font-size: 15px;
+	margin-bottom: 10px;
+}
+.group-btn{
+	margin-top: 15px;
+}
+.group-btn a{
+	display: inline-block;
+	text-decoration: none;
+	color: white;
+	padding: 3px 8px;
+}
+
+@media screen and (max-width: 1024px){
+	.box-metrica-single{
+		width: 100%;
+	}
+	.box-single-wraper{
+		width: 100%;
+		min-height: 0;
+	}
+}
+@media screen and (max-width: 768px){
+	.menu{
+		width: 0;
+		padding: 0;
+		display: none;
+	}
+	header{
+		width: 100%;
+		left: 0;
+	}
+	.content{
+		width: 100%;
+		left: 0;
+	}	
+}
+@media screen and (max-width: 500px){
+	.w50{
+		width: 100%;
+	}
+	.box-single-metrica{
+		width: 100%;
+		padding-top: 40%;
+	}
+	.box-imgs, .box-single{
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 400px){
+	.box-metrica-wrapper h2{
+	font-size: 24px;
+	}
+	.menu-wrapper{
+		width: 200px;		
+	}
+	.box-content{
+		padding: 8px 2%;
+	}	
+}
+@media screen and (max-width: 380px){
+	.itens-menu a{
+		font-size: 15px;
+	}
+}
